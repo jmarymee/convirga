@@ -3,19 +3,19 @@
   <Profiles />
   <Settings>
     <Setting Name="mlretrainermodelurl" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">https://ussouthcentral.services.azureml.net/workspaces/bfeea278c505495b866dc9a5dfa10018/services/36499f37fd3d4706a16d3d90fbaad996/jobs</Value>
     </Setting>
     <Setting Name="mlretrainerkey" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">Y+1+7H7alQ2H9Yu7dVmiFc6fDO1vZbdbPIZZv434m2tAei9WgtlMHx186U7fdJyH/dwUdzy286EyjFkMcBTAgg==</Value>
     </Setting>
     <Setting Name="mlstoragename" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">mlretrainerstoragejd</Value>
     </Setting>
     <Setting Name="mlstoragekey" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">N47GAKHoX5rjFqRox51McDthQ65nIKf77CYJ9vv/vG/6I9Bj2WwAp+LOuN+WIbJVgRE2gHUbDzdGsBofkj2+WA==</Value>
     </Setting>
     <Setting Name="mlstoragecontainer" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">retrainerdata</Value>
     </Setting>
     <Setting Name="endpointname" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

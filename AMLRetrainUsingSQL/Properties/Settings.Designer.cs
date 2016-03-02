@@ -25,7 +25,8 @@ namespace AMLRetrainUsingSQL.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://ussouthcentral.services.azureml.net/workspaces/bfeea278c505495b866dc9a5df" +
+            "a10018/services/36499f37fd3d4706a16d3d90fbaad996/jobs")]
         public string mlretrainermodelurl {
             get {
                 return ((string)(this["mlretrainermodelurl"]));
@@ -37,7 +38,8 @@ namespace AMLRetrainUsingSQL.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Y+1+7H7alQ2H9Yu7dVmiFc6fDO1vZbdbPIZZv434m2tAei9WgtlMHx186U7fdJyH/dwUdzy286EyjFkMc" +
+            "BTAgg==")]
         public string mlretrainerkey {
             get {
                 return ((string)(this["mlretrainerkey"]));
@@ -49,7 +51,7 @@ namespace AMLRetrainUsingSQL.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("mlretrainerstoragejd")]
         public string mlstoragename {
             get {
                 return ((string)(this["mlstoragename"]));
@@ -61,7 +63,8 @@ namespace AMLRetrainUsingSQL.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("N47GAKHoX5rjFqRox51McDthQ65nIKf77CYJ9vv/vG/6I9Bj2WwAp+LOuN+WIbJVgRE2gHUbDzdGsBofk" +
+            "j2+WA==")]
         public string mlstoragekey {
             get {
                 return ((string)(this["mlstoragekey"]));
@@ -73,7 +76,7 @@ namespace AMLRetrainUsingSQL.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("retrainerdata")]
         public string mlstoragecontainer {
             get {
                 return ((string)(this["mlstoragecontainer"]));

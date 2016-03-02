@@ -125,6 +125,9 @@ namespace MLRetrainerLib
         public async Task<string> QueueRetrainingAsync(TRAINING_DATA_SOURCE source, Dictionary<string,string> globalOptions)
         {
             string jobId = null;
+
+            _currentModelTraining = retrainerPrefix + DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH':'mm':'ss");
+
             BatchExecutionRequest request = null;
             AzureBlobDataReference adr = null;
 

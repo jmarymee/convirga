@@ -13,7 +13,7 @@ namespace AzureModelRetrainer
         {
             //These are all the properties necessary to perform model retraining. 
             //See the github repo for graphics and details 
-            //See https://github.com/jmarymee/azuremlmodelretrainer
+            //See https://github.com/jmarymee/convirga
             //
             //First we create an object to store all of the config parameters. 
             MLRetrainerLib.RetrainerLib.MLRetrainConfig configobj = new MLRetrainerLib.RetrainerLib.MLRetrainConfig();
@@ -56,7 +56,8 @@ namespace AzureModelRetrainer
             //Upload new training set
             retrainer.UploadNewTrainingFileToStorage(@"C:\Users\jmarymee\Downloads\AIC-Dataset.csv");
 
-            //Used to get a blob handle to the retraining blob 
+            //Used to get a blob handle to the retraining blob. Not necessary IF you uploaded a fresh set. If you did that then behind the scenes the lib grabbed a reference to the blob
+            //But if you ALREADY uploaded a new set to your configured blob storage (using another tool) then this can be used to grab the Azure blob handle the retrainer needs. 
             retrainer.GetRetrainingBlob("AIC-Dataset.csv");
 
             //This is for display. it allows a person to view the results of the last model training.
@@ -71,6 +72,7 @@ namespace AzureModelRetrainer
             //Retraining a model takes two steps; queue up the job then start the job. One must save the jobID in order to start the job
             //STEP ONE: Assuming your config params are correct, you queue up a retraining job using this call. Be sure to save the jobID or else you won't be able to start
             //the job. If you don't start the job it will be automatically deleted after a few minutes (per the ML doc)
+            //The Dictionary of parms setup below are used when you are 'steering' the retraining - such as algorithmn parms, SQL queryies etc. 
             Dictionary<string, string> gParms = new Dictionary<string, string>();
             gParms.Add("Fraction of rows in the first output dataset", "0.5");
             string jobID = retrainer.QueueRetrainingAsync(MLRetrainerLib.RetrainerLib.TRAINING_DATA_SOURCE.DATA_UPLOAD, gParms).Result;
@@ -95,11 +97,11 @@ namespace AzureModelRetrainer
             //Now we look at the new (latest) results. 
             //These are pulled from CSV files in the configured Azure Blob Storaged
             Console.WriteLine("New Scores for retraining...");
-            //Dictionary<string, double> scores = retrainer.GetLatestRetrainedResults();
-            //foreach (var val in scores)
-            //{
-            //    Console.WriteLine("Rating Name: {0} : Value: {1}", val.Key, val.Value.ToString());
-            //}
+            Dictionary<string, double> scores = retrainer.GetLatestRetrainedResults();
+            foreach (var val in scores)
+            {
+                Console.WriteLine("Rating Name: {0} : Value: {1}", val.Key, val.Value.ToString());
+            }
             string resultOfRetrain = retrainer.GetLatestRetrainedResults(true);
             Console.WriteLine(resultOfRetrain);
 
@@ -111,7 +113,7 @@ namespace AzureModelRetrainer
             //There are seven values to review and the API currently only allows you to select one. In this case it's AUC. The second param indicates the
             //improvement amount that the retrained model should have in order to get TRUE back from the API call.
 
-            bool isModelbetter = true;
+            bool isModelbetter = true; //Arbitrary for testing...
             //bool isModelbetter = retrainer.isUdpateModel("AUC", 0.02f);
             if (!isModelbetter)
             {
