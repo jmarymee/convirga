@@ -11,7 +11,7 @@
 *.userprefs
 
 #App.Config
-App.config
+**/App.config
 
 
 # Build results
