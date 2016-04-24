@@ -49,7 +49,7 @@ namespace AzureModelRetrainer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("updatedendpoint")]
         public string enpointurl {
             get {
                 return ((string)(this["enpointurl"]));
@@ -73,7 +73,7 @@ namespace AzureModelRetrainer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("retrainer")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string mlstoragename {
             get {
                 return ((string)(this["mlstoragename"]));

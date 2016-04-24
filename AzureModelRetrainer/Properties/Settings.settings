@@ -9,13 +9,13 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="enpointurl" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">updatedendpoint</Value>
     </Setting>
     <Setting Name="endpointkey" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="mlstoragename" Type="System.String" Scope="User">
-      <Value Profile="(Default)">retrainer</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="mlstoragekey" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
