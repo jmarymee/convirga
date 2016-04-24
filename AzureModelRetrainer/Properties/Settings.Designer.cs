@@ -73,7 +73,7 @@ namespace AzureModelRetrainer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("retrainer")]
         public string mlstoragename {
             get {
                 return ((string)(this["mlstoragename"]));
