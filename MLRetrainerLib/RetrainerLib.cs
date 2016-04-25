@@ -686,7 +686,9 @@ namespace MLRetrainerLib
             {
                 return false;
             }
-            if (lastScores == null || lastScores.Count == 0) { return true;
+            if (lastScores == null || lastScores.Count == 0)
+            {
+                return true;
             }
             bool isImproved = false;
 
