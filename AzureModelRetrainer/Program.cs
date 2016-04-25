@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -15,6 +17,7 @@ namespace AzureModelRetrainer
             //See the github repo for graphics and details 
             //See https://github.com/jmarymee/convirga
             //
+
             //First we create an object to store all of the config parameters. 
             MLRetrainerLib.RetrainerLib.MLRetrainConfig configobj = new MLRetrainerLib.RetrainerLib.MLRetrainConfig();
 
@@ -34,9 +37,6 @@ namespace AzureModelRetrainer
             configobj.publishendpointkey = Properties.Settings.Default.endpointkey;
             configobj.publishendpointname = Properties.Settings.Default.endpointname;
 
-            configobj.publishendpoint2url = Properties.Settings.Default.endpoint2url;
-            configobj.publishendpoint2key = Properties.Settings.Default.endpoint2key;
-
             //These are somewhat arbitrary. Essentially it's just a place to store the retrained models and CSV files with the scoring/accuracy daata. 
             //You should manually created this storage area in Azure Blobs and then use the url, key and container name in the params below.
             configobj.mlretrainerstoragename = Properties.Settings.Default.mlstoragename;
@@ -54,7 +54,7 @@ namespace AzureModelRetrainer
             //retrainer.UpdateSQLQueryForNewDate("2015-10-01");
 
             //Upload new training set
-            retrainer.UploadNewTrainingFileToStorage(@"C:\Users\jmarymee\Downloads\AIC-Dataset.csv");
+            retrainer.UploadNewTrainingFileToStorage(@"C:\Users\jd\Downloads\AIC-Dataset.csv");
 
             //Used to get a blob handle to the retraining blob. Not necessary IF you uploaded a fresh set. If you did that then behind the scenes the lib grabbed a reference to the blob
             //But if you ALREADY uploaded a new set to your configured blob storage (using another tool) then this can be used to grab the Azure blob handle the retrainer needs. 

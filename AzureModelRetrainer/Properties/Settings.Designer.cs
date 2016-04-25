@@ -49,7 +49,7 @@ namespace AzureModelRetrainer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("updatedendpoint")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string enpointurl {
             get {
                 return ((string)(this["enpointurl"]));
@@ -74,12 +74,12 @@ namespace AzureModelRetrainer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string mlstoragename {
+        public string endpointname {
             get {
-                return ((string)(this["mlstoragename"]));
+                return ((string)(this["endpointname"]));
             }
             set {
-                this["mlstoragename"] = value;
+                this["endpointname"] = value;
             }
         }
         
@@ -110,72 +110,12 @@ namespace AzureModelRetrainer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string modelUpdateRefMeasure {
+        public string mlstoragename {
             get {
-                return ((string)(this["modelUpdateRefMeasure"]));
+                return ((string)(this["mlstoragename"]));
             }
             set {
-                this["modelUpdateRefMeasure"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string modelUpdateMinImprovement {
-            get {
-                return ((string)(this["modelUpdateMinImprovement"]));
-            }
-            set {
-                this["modelUpdateMinImprovement"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string endpointname {
-            get {
-                return ((string)(this["endpointname"]));
-            }
-            set {
-                this["endpointname"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string endpoint2url {
-            get {
-                return ((string)(this["endpoint2url"]));
-            }
-            set {
-                this["endpoint2url"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string endpoint2name {
-            get {
-                return ((string)(this["endpoint2name"]));
-            }
-            set {
-                this["endpoint2name"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string endpoint2key {
-            get {
-                return ((string)(this["endpoint2key"]));
-            }
-            set {
-                this["endpoint2key"] = value;
+                this["mlstoragename"] = value;
             }
         }
     }

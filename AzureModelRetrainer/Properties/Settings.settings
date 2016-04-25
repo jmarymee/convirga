@@ -9,12 +9,12 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="enpointurl" Type="System.String" Scope="User">
-      <Value Profile="(Default)">updatedendpoint</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="endpointkey" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="mlstoragename" Type="System.String" Scope="User">
+    <Setting Name="endpointname" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="mlstoragekey" Type="System.String" Scope="User">
@@ -23,22 +23,7 @@
     <Setting Name="mlstoragecontainer" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="modelUpdateRefMeasure" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="modelUpdateMinImprovement" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="endpointname" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="endpoint2url" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="endpoint2name" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="endpoint2key" Type="System.String" Scope="User">
+    <Setting Name="mlstoragename" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>

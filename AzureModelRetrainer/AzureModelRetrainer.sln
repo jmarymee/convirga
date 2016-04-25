@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureModelRetrainer", "AzureModelRetrainer.csproj", "{0AB54194-5100-45B8-A543-647BEC1CC5C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLRetrainerLib", "..\MLRetrainerLib\MLRetrainerLib.csproj", "{2B7CED2A-543C-405D-99E9-35D95F3047A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMLRetrainUsingSQL", "..\AMLRetrainUsingSQL\AMLRetrainUsingSQL.csproj", "{05FE7BC3-C0EF-4B70-BAFF-9DE5FE5D4FDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C8E35DFA-C0C9-48D5-9F55-3E091F4DFE22}"
+	ProjectSection(SolutionItems) = preProject
+		..\azure.config = ..\azure.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
